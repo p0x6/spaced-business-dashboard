@@ -12,7 +12,10 @@ class App extends Component {
       <Router>
       <div class='spaced-header'>
       <Header />
-      <SectionCards />
+      <div style={{display: 'flex'}}>
+        <div style={{flex: 2}}/>
+        <SectionCards />
+      </div>
       </div>
       </Router>
     )
