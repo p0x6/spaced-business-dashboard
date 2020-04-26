@@ -1,9 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container"
 import "./BreakdownCard.css";
 
-const BreakdownCard = ({item}) => {
+const OldBreakdownCard = ({item}) => {
   return (
     <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
       <Card.Body>
@@ -56,4 +58,35 @@ const BreakdownCard = ({item}) => {
   )
 }
 
+const BreakdownCard = ( { item }) => {
+  return (
+    <Card className="breakdown-card">
+      <Card.Body>
+      <Container fluid>
+        <Row style={{ marginLeft: 5 }}>
+        <div style={{color: 'black', fontSize: 18, fontWeight: "bold"}}>
+          {item.name}
+        </div>
+        <table style={{ width: "97%" }}>
+        <tr>
+          <th></th>
+          <th>Actual #</th>
+          <th>Percent</th>
+        </tr>
+        <tr>
+          <td>Capacity</td>
+          <td className='value'>{item.currentOccupant}</td>
+          <td className='value'>{(item.currentOccupant / item.capacity * 100).toFixed(0)}</td>
+        </tr>
+        <tr>
+          <td>Can Accomondate</td>
+          <td className='value'>{item.capacity}</td>
+        </tr>
+      </table>
+          </Row>
+      </Container>
+      </Card.Body>
+    </Card>
+  )
+}
 export default BreakdownCard;

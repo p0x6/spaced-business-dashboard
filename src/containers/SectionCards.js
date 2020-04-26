@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
+import Container from "react-bootstrap/Container"
 import BreakdownCard from "../components/BreakdownCard";
 
 import "./SectionCards.css";
@@ -27,6 +28,7 @@ const data3 = [
 const SectionCards = () => {
   return (
     <div style={{flex: 7, backgroundColor: '#f9f9f9'}}>
+    <Container fluid>
       <FullCapacityCard />
       <CardDeck>
         {data1.map(item => (
@@ -43,6 +45,8 @@ const SectionCards = () => {
           <BreakdownCard item={item} />
         ))}
       </CardDeck>
+    </Container>
+
     </div>
   )
 }
