@@ -10,7 +10,7 @@ const Sidebar = () => {
             <img src={logo} className="Company-logo" alt="logo" />
             <p className='Company-name'>Whole Foods Market</p>
             <div className='Company-Address'>
-
+            
             </div>
         </div>
     )

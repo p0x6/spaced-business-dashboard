@@ -7,7 +7,10 @@ import {
 import SectionCards from "./containers/SectionCards";
 import Sidebar from "./components/Sidebar";
 
+import "./App.css";
+
 class App extends Component {
+
   render() {
     return(
       <Router>
@@ -19,6 +22,7 @@ class App extends Component {
         <SectionCards />
       </div>
       </div>
+        <footer>© Spaced | 2020</footer>
       </Router>
     )
   }

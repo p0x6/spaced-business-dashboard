@@ -4,12 +4,13 @@ import CardDeck from "react-bootstrap/CardDeck";
 import BreakdownCard from "../components/BreakdownCard";
 
 import "./SectionCards.css";
+import FullCapacityCard from "../components/FullCapacityCard";
 
 const data1 = [
   {name: 'Bakery', capacity: 25, currentOccupant: 4},
   {name: 'Dairy', capacity: 25, currentOccupant: 3},
   {name: 'Produce', capacity: 25, currentOccupant: 7},
-]
+];
 
 const data2 = [
   {name: 'Frozen', capacity: 25, currentOccupant: 25},
@@ -25,7 +26,8 @@ const data3 = [
 
 const SectionCards = () => {
   return (
-    <div style={{flex: 7}}>
+    <div style={{flex: 7, backgroundColor: '#f9f9f9'}}>
+      <FullCapacityCard />
       <CardDeck>
         {data1.map(item => (
           <BreakdownCard item={item} />
@@ -41,7 +43,7 @@ const SectionCards = () => {
           <BreakdownCard item={item} />
         ))}
       </CardDeck>
-      </div>
+    </div>
   )
 }
 
