@@ -11,3 +11,35 @@
     margin-top: 30px;
     height: 20vmin;
 }
+.Company-details{
+  margin-top: 10px;
+  opacity: 70%;
+
+  word-wrap: break-word;
+  margin-left: 20%;
+  max-width: 55%;
+}
+
+#company_details{
+  border-collapse: separate;
+  border-spacing: 15px 10px;
+}
+
+.appointment-btn{
+  border-radius: 5px;
+  width: 11em;
+  background-color: #1E90FF;
+  color: white;
+  padding: 5px;
+}
+
+.contact-buttons{
+  line-height: 50px;
+}
+.staff{
+  border-radius: 5px;
+  width: 11em;
+  border-color: #1E90FF;
+  color: black;
+  padding: 5px;
+}
