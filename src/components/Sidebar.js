@@ -29,7 +29,7 @@ const Sidebar = () => {
               </table>
             </div>
             <div className='contact-buttons'>
-              <button className="appointment-btn">Make an appointment</button><br/>
+              <button className="appointment-btn">Make an Announcement</button><br/>
               <button className="staff">Contact Staff</button>
             </div>
         </div>
