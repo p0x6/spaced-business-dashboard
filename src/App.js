@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Container from "react-bootstrap/Container"
 import Header from './Header';
 import {
   BrowserRouter as Router,
@@ -9,6 +10,16 @@ import Sidebar from "./components/Sidebar";
 
 import "./App.css";
 
+const Main = () => {
+  return (
+    <Container fluid style={{display: 'flex'}}>
+    <div style={{flex: 2}}/>  
+
+      <SectionCards />
+    </Container>
+  )
+}
+
 class App extends Component {
 
   render() {
@@ -17,10 +28,7 @@ class App extends Component {
       <div class='spaced-header'>
       <Header />
       <Sidebar />
-      <div style={{display: 'flex'}}>
-        <div style={{flex: 2}}/>
-        <SectionCards />
-      </div>
+      <Main />
       </div>
         <footer>© Spaced | 2020</footer>
       </Router>
