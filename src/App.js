@@ -6,18 +6,21 @@ import {
 } from 'react-router-dom'
 import SectionCards from "./containers/SectionCards";
 
+import "./App.css";
+
 class App extends Component {
   
   render() {
     return(
       <Router>
       <div class='spaced-header'>
-      <Header />
-      <div style={{display: 'flex'}}>
-        <div style={{flex: 2}}/>
-        <SectionCards />
+        <Header />
+        <div style={{display: 'flex'}}>
+          <div style={{flex: 2}}/>
+          <SectionCards />
+        </div>
       </div>
-      </div>
+        <footer>© Spaced | 2020</footer>
       </Router>
     )
   }
