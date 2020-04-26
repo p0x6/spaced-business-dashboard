@@ -1,0 +1,13 @@
+.sidebar {
+    height: 100vh;
+    opacity: 0.8;
+    width: 400px;
+    position: fixed;
+    z-index: 200;
+    text-align: center;
+}
+
+.Company-logo{
+    margin-top: 30px;
+    height: 20vmin;
+}
