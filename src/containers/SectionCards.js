@@ -26,7 +26,7 @@ const data3 = [
 
 const SectionCards = () => {
   return (
-    <div style={{flex: 7}}>
+    <div style={{flex: 7, backgroundColor: '#f9f9f9'}}>
       <FullCapacityCard />
       <CardDeck>
         {data1.map(item => (
