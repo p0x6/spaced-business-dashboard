@@ -34,9 +34,11 @@
 }
 
 .contact-buttons{
-  line-height: 50px;
+  line-height: 20px;
 }
+
 .staff{
+  margin:15px;
   border-radius: 5px;
   width: 11em;
   border-color: #1E90FF;
