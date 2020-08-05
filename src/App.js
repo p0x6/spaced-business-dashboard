@@ -30,7 +30,7 @@ class App extends Component {
       <Sidebar />
       <Main />
       </div>
-        <footer>© Spaced | 2020</footer>
+        <footer>© Spaced | 2021</footer>
       </Router>
     )
   }
